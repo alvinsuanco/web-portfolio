@@ -4,7 +4,7 @@
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="ie-edge">
 
 	<title>Alvin Suanco | Web Dev Portfolio</title>
@@ -28,7 +28,9 @@
 	<!-- Dev Icon -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-	 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
 
 
 
@@ -37,57 +39,111 @@
 <body>
 	
 
-
-	<div class="container-fluid" id="about">
-		<div class="row"> 
-		
-			<div class="col-md-4 offset-1">
-			
-			   	<h1 class="display-4 text-center">Hi my name is Alvin</h1>
-			    <h3 class="mb-3 text-center">I'm a Web Developer.</h3>
-			    <img class="imgme mb-0" src="assets/images/me.jpg">
-			    <p class="dLResume"> <img src="https://img.icons8.com/carbon-copy/40/000000/downloads.png"><a href="assets/images/resume.pdf" download="resume.pdf" target="_blank">Download Resume</a></p>
-			  
-
-			</div> 
-			<!-- leftside -->
-			<div class="col-md-4 offset-1">
-				
-				<h2>About me!</h2>
-					<p>Im from Quezon City and a gradute of Hotel and Restaurant Management,
-					I had an experience working in Cruised and previously work in Local BPO industy as a Team leader
-					Im a Career shifter and started to motive to learn doing Web Developer, so i joined Tuitt Boothcamp
-					Now i learned and apply my knowledged in my work of passion and start building websites.</p>
-
-				<h4 class="my-5"> Web Dev Skills</h4>
-					<div class="devIcon1">
-						<i class="devicon-html5-plain-wordmark colored"></i>
-						<i class="devicon-css3-plain-wordmark colored "></i>
-						<i class="devicon-bootstrap-plain-wordmark colored"></i>
-						<i class="devicon-javascript-plain colored"></i>
-					</div>
-					<div class="devIcon2 mt-2">
-						<i class="devicon-php-plain colored"></i>
-						<i class="devicon-laravel-plain-wordmark colored"></i>
-						<i class="devicon-mysql-plain-wordmark colored"></i>
-						<i class="devicon-mongodb-plain-wordmark colored"></i>
-					</div>
-					<div class="devIcon3">
-						<i class="devicon-git-plain-wordmark colored"></i>
-						<i class="devicon-github-plain-wordmark colored"></i>
-						<i class="devicon-gitlab-plain-wordmark colored"></i>
-					</div>
-
-			</div> <!-- rightside -->
-		</div>
+<!-- 	Parallax Background and Navigation -->
+	<div class="parallaxbg" id="top">	
+				<div class="container">
+			<nav>
+				<a  class="linkA" href="#aboutPage"> About </a>
+				<a class="linkA" href="#webSkill"> Skills </a>
+				<a class="linkA" href="#project"> Projects </a>
+				<div class="line"></div>
+			</nav>
+			</div>
 	</div>
 
 
+	<!-- About -->
+
+	<div class="container-fluid" id="aboutPage">
+		<div class="row" id="aboutInfo"> 
+		
+			<div class="col-md-12">
+			
+			   	<h1 class="display-4 text-center">Hi my name is Alvin</h1>
+			    <h3 class="mb-3 text-center">I'm a Web Developer.</h3>
+			    <img class="imgme mb-0 mt-4" src="assets/images/imgme.jpg">
+			   
+
+			</div>  
+			
+			<div class="col-lg-6 offset-3" id="aboutMe">
+				<h2 class="text-center my-5">About me!</h2>
+					<p>Im from Quezon City and a gradute of Hotel and Restaurant Management,
+					I had an experience working in Cruised and previously work in Local BPO industy as a Team leader.
+					Im a Career shifter and started to motivate and learn Web Development, Im a graduate of Tuitt and gained the knowledge of a fullstack Web Developer,
+					Now i can apply my knowledge in my work of passion and start building webiste.</p>
+			</div>   
+
+
+			<div class="col-lg-12" id="divSocial">
+					<a href="https://www.facebook.com/" target="_blank"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook" class="iconSocial"></a>
+					<a href="https://www.google.com/gmail/" target="_blank"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="Gmail" class="iconSocial"></a>
+					<a href="assets/images/resume.pdf" download="resume.pdf" target="_blank" class="dLResume"><img src="https://img.icons8.com/bubbles/100/000000/attach-resume-male.png" alt="Resume Download" class="iconSocial"></a>
+			</div>	
+
+				
+		</div>
+				<div>
+					<a href="#top"><i class="fas fa-chevron-circle-up" id="arrowUp"></i></a>
+					
+				</div>
+	</div>
 	
 
-	
-	<div class="container" id="project">
-		<h1 class="mt-5 text-center">Projects</h1>
+
+	<!-- Web Skills -->
+	<div class="container" id="webSkill">
+		<div class="text-center my-5">
+			<h1>My Technical Skills</h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-12 col-md-8 col-sm-2">
+				<div class="container">
+					<div id="skillsImages" >
+							<h2> Frontend: </h2>
+							<div class="mb-3 iconPadleft">
+								<i class="devicon-html5-plain-wordmark colored"></i>
+								<i class="devicon-css3-plain-wordmark colored "></i>
+								<i class="devicon-bootstrap-plain-wordmark colored"></i>
+								<i class="devicon-javascript-plain colored"></i>
+								<i class="devicon-jquery-plain-wordmark colored"></i>
+							</div>
+
+							<h2> Backend: </h2>
+							<div class="mb-3 iconPadleft">
+								<i class="devicon-php-plain colored"></i>
+								<i class="devicon-laravel-plain-wordmark colored"></i>
+								<i class="devicon-mysql-plain-wordmark colored"></i>
+								<i class="devicon-mongodb-plain-wordmark colored"></i>
+							</div>
+							
+							<h2> Deployment: </h2>
+							<div class="mb-3 iconPadleft">
+								<i class="devicon-git-plain-wordmark colored"></i>
+								<i class="devicon-heroku-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div> 
+				</div>	
+								
+			</div>
+					<div>
+						<a href="#aboutPage"><i class="fas fa-chevron-circle-up" id="arrowUp"></i></a>
+					
+
+					</div>		
+		</div>
+
+	</div>
+					
+						
+					
+
+	<!-- 	Projects -->
+
+	<div class="container  mb-5" id="project">
+		<h1 class="mt-5 text-center mb-5">Projects</h1>
 
 		<div class="row">
 			<div class="col-md-4" >
@@ -96,7 +152,7 @@
 					<div class="card-body">
 						<h3 class="card-title">Scuba Juan Divers</h3>
 						<p> Use HTML5, CSS3 and Bootstrap create a resonsive mobile first website</p>
-						<a class="btn btn-outline-primary" href="https://alvinsuanco.github.io/scuba-juan-divers/."> View Project </a>
+						<a class="btn btn-outline-primary btnView" href="https://alvinsuanco.github.io/scuba-juan-divers/."> View Project </a>
 					</div>
 				</div>
 			</div>
@@ -107,7 +163,7 @@
 					<div class="card-body">
 						<h3 class="card-title"> Box37 NetCafe</h3>
 						<p> A Inventory Systme site, use PHP and Laravel Framework with Database Mysql</p>
-						<a class="btn btn-outline-primary" href="https://peaceful-crag-98618.herokuapp.com/"> View Project </a>
+						<a class="btn btn-outline-primary btnView" href="https://peaceful-crag-98618.herokuapp.com/"> View Project </a>
 					</div>
 				</div>
 			</div>
@@ -117,28 +173,21 @@
 					<img class="card-img-top" src="assets/images/cardepo1.png">
 					<div class="card-body">
 						<h3 class="card-title">CarDepo</h3>
-						<p>Booking system site, use PHP Laravel Franwork and Databse MongoDb</p>
-						<a class="btn btn-outline-primary" href="https://afternoon-brushlands-37291.herokuapp.com/"> View Project </a>
+						<p >Booking system site, use PHP Laravel Franwork and Databse MongoDb</p>
+						<a class="btn btn-outline-primary btnView" href="https://afternoon-brushlands-37291.herokuapp.com/"> View Project </a>
 					</div>
 				</div>
 			</div>
 		</div>
+					<div>
+						<a href="#webSkill"><i class="fas fa-chevron-circle-up mt-5" id="arrowUp"></i></a>
+					</div>
 	</div>
-	
- 	
+
+					
 
 
-
-
-
-<!-- 
-	<footer class="container-fluid bg-dark">
-		   
-	    <div class="text-center text-white mb-0 footerText">© 2018 Copyright:
-	      <span class="footerText"> Alvin G. Suanco | Tuitt Coding Boothcamp</span>
-	    </div>
-	</footer> -->
-
+	<!-- Footer -->
 	<footer class="container-fluid">
 	    <div class="row">
 	       <div class="col-sm-6">
@@ -164,7 +213,8 @@
 	                  ">
 	            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
 	          </a>
-	        </div>      
+	        </div> 
+
 	    </div>
 
 	</footer>
