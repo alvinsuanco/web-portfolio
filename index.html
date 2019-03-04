@@ -24,6 +24,10 @@
 
 	<!-- External Link CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
 
 	<!-- Dev Icon -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -37,19 +41,25 @@
 
 </head>
 <body>
-	
+
+				
+		
 
 <!-- 	Parallax Background and Navigation -->
-	<div class="parallaxbg" id="top">	
-				<div class="container">
-			<nav>
-				<a  class="linkA" href="#aboutPage"> About </a>
-				<a class="linkA" href="#webSkill"> Skills </a>
-				<a class="linkA" href="#project"> Projects </a>
-				<div class="line"></div>
-			</nav>
+<div class="container-fluid">
+	<div class="parallaxbg">		
+			<div id="large-header">
+				<canvas id="demo-canvas"></canvas>
+				<nav>
+					<a  class="linkA" href="#aboutPage"> About </a>
+					<a class="linkA" href="#webSkill"> Skills </a>
+					<a class="linkA" href="#project"> Projects </a>
+					<div class="line"></div>
+				</nav>
 			</div>
+		
 	</div>
+</div>
 
 
 	<!-- About -->
@@ -239,10 +249,6 @@
 
 
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 
 <!-- Optional JavaScript
@@ -253,6 +259,17 @@ jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
 <script src="assets/js/bootstrap.min.js"></script>
+
+ <script src="assets/js/TweenLite.min.js"></script>
+<script src="assets/js/EasePack.min.js"></script>
+<script src="assets/js/rAF.js"></script>
+<script src="assets/js/demo-1.js"></script>
+
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
 </body>
 
