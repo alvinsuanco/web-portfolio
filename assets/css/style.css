@@ -245,7 +245,7 @@ footer .row{
 
 
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 400px){
 
 	#arrowUp{
 	
@@ -333,20 +333,63 @@ footer .row{
 
 
 
-@media only screen and (min-width:451px) and (max-width:768px){
+@media only screen and (min-width: 401px) and (max-width: 960px){
 
 
 	
+	#aboutPage{
+		height: 85vh;
+	}
+
 	.imgme {
-	
-		margin-left: 40%;
+		margin-left: 36%;
 		
 	}
 
-	#aboutInfo{
-	padding-top: 2%;
-	padding-left: 2%;
+	#divSocial{
+	padding-left: 30%;
+	
 	}
+
+	#aboutMe {
+		margin-left: 2px;
+	}
+
+	#webSkill{
+		height: 89vh;
+	}
+
+	#skillsImages{
+		padding-left: 13%;
+		margin-top: 50px;
+	}
+
+
+	#skillsImages i{
+		font-size: 8em;
+		line-height: 135px;
+		padding: 12px;
+
+	}
+
+
+	#project{
+		padding-top: 5%;
+		height: 60vh;
+
+	}
+
+	.projectCard{
+		margin: 5px 5px 5px 5px;
+		width: 210px;
+	    height: 380px;
+	    display: inline-block;
+	}
+
+
+
+
+
 
 }
 
