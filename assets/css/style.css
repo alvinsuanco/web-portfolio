@@ -11,28 +11,31 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-	background: #F1FFF9;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, #FFFFFF, #F1FFF9);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #FFFFFF, #F1FFF9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
-
-
-#arrowUp{
-	padding-left: 50%;
-	font-size: 3em;
+#fistSection{
+	padding: 0;
 }
 
 
 /* Parallax background and Navigation*/
 
+.navBg {
+	background-image: url(../images/topImg.jpeg);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  /*  opacity: .9;*/
+    height: 100vh;
+}
+
+
 nav{
 	position: absolute;
-	top: 10%;
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	opacity: .8;
+	opacity: .9;
 }
 
 .linkA {
@@ -91,39 +94,106 @@ nav{
 }
 
 
-.parallaxbg{
-	background-image: url(../images/parallaxbg.png);
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .9;
-    height: 100vh;
-}
-
-/* End of Parallax background and Navigation*/
 
 
 /* About Page */
 
 #aboutPage{
-	/*margin-bottom: 22em;*/
-	height: 100vh;
-	
+	height: 55vh;
+	background-color: #3E3E3E;
 }
+
+
 
 .imgme {
-	height: 200px;
-	width: 200px;
-	border: 2px solid #ED9B40;
+
+	height: 320px;
+	width: 320px;
+	border: 4px solid #ED9B40;
 	border-radius: 60%;
-	margin-left: 45%;
-	padding: 10px 0 0 4px;
+/*	margin-left: 3%;*/
+
 }
 
-#aboutInfo{
+.about-info{
+	padding: 7% 0 0 22%;
+}
+
+.imgDiv{
+	padding: 6% 0 0 4%;
+}
+
+.about-info h2{ 
+	font-size: 7em;
+}
+
+.about-info h3{ 
+	font-size: 3em;
+}
+
+.list-about{
+	list-style: none;
 	padding-top: 5%;
 }
+
+.list-about li{
+	font-size: 2em;
+	color: white;
+}
+
+.list-about li i{
+	font-size: 15px;
+	padding: 5px;
+}
+
+.list-social li {
+	list-style: none;
+	display: inline-block;
+}
+.list-social li i {
+	font-size: 3em;
+	padding: 5px;
+}
+
+
+#second-about{
+	background-color: #2B2B2B;
+	height: 50vh;
+}
+
+.second{
+	padding: 40px 0px;
+}
+
+#aboutMe h2{
+	font-size: 4em;
+
+}
+#aboutMe p{
+	font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #divSocial{
 	padding-left: 42%;
@@ -166,37 +236,68 @@ nav{
 
 
 /*Project*/
+/*cards*/
+.card-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+/*  min-width: 780px;*/
+/*  width: 100%;*/
+  height: 700px;
+}
 
-#project{
-	padding-top: 10%;
-	padding-bottom: 13%;
+.card {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 390px;
+  width: 250px;
+  margin: 25px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  transition: height 0.4s, box-shadow 0.3s;
+}
+
+.card:hover {
+  height: 420px;
+  box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.5);
+}
+
+.card-image {
+  /* center horizontally overflown image */
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+
+  height: 200px;
+  min-width: 100%;
+  transition: height 0.4s, opacity 0.1s;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  height: 230px;
+  padding: 45px 15px;
+  font-family: Helvetica;
+  border-color: transparent;
 }
 
 
-.projectCard {
-    width: 350px;
-    height: 450px;
-    float: left;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    text-align: center;
-    transition: all 0.25s;
-    }
+.card-title {
+  font-family: Serif;
+  font-size: 28px;
+}
 
-  h4 {
-      font-weight: 600px;
-    }
-
-    p {
-      padding: 0 1rem;
-      font-size: 20px;
-
-    }
+.card-para {
+	 font-size: 15px;
+}
 
 
+
+
+
+/*button hover*/
 .btnView {
 	color: #20bf6b !important;
 	text-transform: uppercase;
@@ -214,6 +315,10 @@ nav{
 	border-color: #0E0F11 !important;
 	transition: all 0.3s ease 0s;
 	}
+
+
+
+
 
 
 
@@ -244,6 +349,56 @@ footer .row{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 400px){
 
 
@@ -252,10 +407,6 @@ footer .row{
 	}
 
 
-	#arrowUp{
-	
-		font-size: 2em;
-	}
 
 /* NavBar*/
 
@@ -284,18 +435,55 @@ footer .row{
 
  /* About Page*/
 
-
-.imgme {
-		height: 150px;
-		width: 150px;
-		margin-left: 29%;
-		
+ 	#aboutPage{
+		height: 100vh;
 	}
 
-	#aboutMe {
-		margin-left: 5px;
+	#second-about{
+		height: 90vh;
 	}
 
+	.about-info{
+		padding: 5px 20px;
+
+	}
+
+
+
+
+	.imgme {
+			height: 220px;
+			width: 220px;
+			margin-left: 17%;
+			
+	}
+
+	#aboutMe h2{
+		padding-top: 20px;
+		font-size: 20px;
+	}
+	#aboutMe p{
+		font-size: 15px;
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	#divSocial{
 		padding-left: 30%;
 	}
@@ -346,13 +534,38 @@ footer .row{
 	}
 	
 	#aboutPage{
-		height: 85vh;
+		height: 54vh;
 	}
 
+	.about-info{
+		padding-left: 10%;
+
+	}
+
+
 	.imgme {
-		margin-left: 36%;
+		margin-left: 10%;
+		height: 270px;
+		width: 270px;
 		
 	}
+
+	#second-about{
+		height: 40vh;
+	}
+
+	#aboutMe {
+		padding-left: 15%;
+	}
+
+	#aboutMe h2{
+		font-size: 20px;
+	}
+	#aboutMe p{
+		font-size: 15px;
+	}
+
+
 
 	#divSocial{
 	padding-left: 30%;
@@ -408,6 +621,9 @@ footer .row{
 	#demo-canvas{
 		width: 1800px !important;
 	}
+
+
+
 }
 
 

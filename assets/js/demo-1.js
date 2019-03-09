@@ -157,7 +157,7 @@
             ctx.stroke();
         }
     }
-rgb(101, 255, 57)
+
     function Circle(pos,rad,color) {
         var _this = this;
 
