@@ -1,35 +1,147 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Fjalla One', sans-serif;
-	font-family: 'Bree Serif', serif;
-	font-size: 10px;
-}
+
 
 html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background-color: #F9F3ED;
 }
 
 
-#fistSection{
-	padding: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*parallax backgound*/
+.totalcontainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.container1 {
+  transform: scaleX(1.11);
+}
+.container2 {
+  transform: scaleX(1.25);
+}
+.layer-1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fed8c1;
+}
+
+.layer-2 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay2.svg")
+    no-repeat center center fixed;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.layer-3 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay3.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+.layer-4 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay4.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+.layer-5 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay5.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s
+    both;
+}
+.layer-6 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453881/codepen/lay6.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s
+    both;
+}
+.layer-7 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453881/codepen/lay7.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.85s
+    both;
+}
+.layer-8 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453882/codepen/lay8.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+}
+.laya-please {
+  position: absolute;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0px;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 
-/* Parallax background and Navigation*/
-
-.navBg {
-	background-image: url(../images/topImg.jpeg);
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  /*  opacity: .9;*/
-    height: 100vh;
-}
 
 
+/*Navigation*/
 nav{
 	position: absolute;
 	top: 20%;
@@ -89,125 +201,79 @@ nav{
 .line{
 	width: 120px;
 	height: 3px;
-/*	background-color: grey;*/
 	transition: all .4s ease-in-out;
 }
 
 
 
-
-/* About Page */
-
-#aboutPage{
-	height: 55vh;
-	background-color: #3E3E3E;
-}
-
-
-
-.imgme {
-
-	height: 320px;
-	width: 320px;
-	border: 4px solid #ED9B40;
-	border-radius: 60%;
-/*	margin-left: 3%;*/
-
-}
-
-.about-info{
-	padding: 7% 0 0 22%;
-}
-
-.imgDiv{
-	padding: 6% 0 0 4%;
-}
-
-.about-info h2{ 
-	font-size: 7em;
-}
-
-.about-info h3{ 
-	font-size: 3em;
-}
-
 .list-about{
 	list-style: none;
-	padding-top: 5%;
+	padding: 	0;
 }
 
-.list-about li{
-	font-size: 2em;
-	color: white;
+#meImg{
+	border-radius: 50%;
+	border: 3px solid gold;
+	height: 250px;
+	width: 250px;
 }
 
-.list-about li i{
-	font-size: 15px;
-	padding: 5px;
-}
-
-.list-social li {
+.list-social li{
 	list-style: none;
 	display: inline-block;
-}
-.list-social li i {
-	font-size: 3em;
-	padding: 5px;
+	padding-right: 10px;
+	font-size: 	2em;
 }
 
-
-#second-about{
-	background-color: #2B2B2B;
-	height: 100vh;
+.list-social{
+		padding-left: 0px;
 }
 
-.second{
-	padding: 40px 0px;
+#aboutMe{
+		padding: 15px;
 }
 
-#aboutMe h2{
-	font-size: 4em;
-
-}
-#aboutMe p{
-	font-size: 20px;
-
+.aboutinfo{
+	padding-left: 50px;
 }
 
+/*button hover*/
+.btnView {
+	color: #20bf6b !important;
+	text-transform: uppercase;
+	background: #ffffff;
+	padding: 10px;
+	border: 2px solid #20bf6b !important;
+	border-radius: 6px;
+	display: inline-block;
+	margin-top: 8px;
+	}
 
+.btnView:hover {
+	color: #0E0F11 !important;
+	border-radius: 50px;
+	border-color: #0E0F11 !important;
+	transition: all 0.3s ease 0s;
+	}
 
-
-
-
-
-
-/* Web Developemt Skills*/
-
-#techSkill {
-	font-size: 4em;
-	margin-bottom: 10px;
-	color: white;
-}
-
+/*My Tecknical Skills*/
 .devIcon{
 	display: inline-block;
-	padding: 5px;
-	margin: 5px;
+	padding: 2px;
+	margin: 2px;
 }
 
 .colored {
-	font-size: 10em;
+	font-size: 4em;
 
 }
 
-
-
-
-
-
-
-
 /*Project*/
+
+#projects{
+	margin-top: 6%;
+}
+
 /*cards*/
 .card-row {
   display: flex;
@@ -215,7 +281,7 @@ nav{
   align-items: center;  
 /*  min-width: 780px;*/
 /*  width: 100%;*/
-  height: 700px;
+  height: 450px;
 }
 
 .card {
@@ -240,7 +306,6 @@ nav{
   left: -9999px;
   right: -9999px;
   margin: auto;
-
   height: 200px;
   min-width: 100%;
   transition: height 0.4s, opacity 0.1s;
@@ -258,39 +323,12 @@ nav{
 
 .card-title {
   font-family: Serif;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .card-para {
-	 font-size: 15px;
+	 font-size: 12px;
 }
-
-
-
-
-
-/*button hover*/
-.btnView {
-	color: #20bf6b !important;
-	text-transform: uppercase;
-	background: #ffffff;
-	padding: 10px;
-	border: 2px solid #20bf6b !important;
-	border-radius: 6px;
-	display: inline-block;
-	margin-top: 8px;
-	}
-
-.btnView:hover {
-	color: #0E0F11 !important;
-	border-radius: 50px;
-	border-color: #0E0F11 !important;
-	transition: all 0.3s ease 0s;
-	}
-
-
-
-
 
 
 
@@ -310,286 +348,104 @@ footer .row{
 
 
 
+/*Mobile View*/
+@media only screen and (max-width: 415px){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 400px){
-
-
-	#demo-canvas{
-		width: 350px !important;
-	}
-
-
-
-/* NavBar*/
 
 	.linkA {
-		width: 40px;
-		font-size: 12px;
+		font-size: 30px;
+	}
+
+	nav{
+		top: 30%;
+		left: 55%;
 	}
 
 	.line{
-		width: 40px;
+		width: 110px;
 	}
 
 	.linkA:nth-child(1):hover ~ .line {
-		transform: translate(1px);
+		transform: translate(8px);
 	}
+
 	.linkA:nth-child(2):hover ~ .line {
-		transform: translate(41px);
-	}
-	.linkA:nth-child(3):hover ~ .line{
-		transform: translate(85px);
+		transform: translate(8px);
 	}
 
-
-
-
-
- /* About Page*/
-
- 	#aboutPage{
-		height: 100vh;
+	.linkA:nth-child(3):hover ~ .line {
+		transform: translate(8px);
 	}
 
-	#second-about{
-		height: 90vh;
+	#meImg{
+		
+		height: 200px;
+		width: 200px;
+		margin-left: 18%;
 	}
 
-	.about-info{
-		padding: 5px 20px;
-
+	.list-social{
+		padding-left: 0px;
 	}
 
-
-
-
-	.imgme {
-			height: 220px;
-			width: 220px;
-			margin-left: 17%;
-			
+	#aboutMe{
+		padding: 15px;
 	}
-
-	#aboutMe h2{
-		padding-top: 20px;
-		font-size: 20px;
-	}
-	#aboutMe p{
-		font-size: 15px;
-	}
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	#divSocial{
-		padding-left: 30%;
-	}
-
-	.iconSocial {
-		height: 50px;
-		width: 50px;
-
-	}
-
-
-
-
-
-
- /*Project*/
-	#project{
-		padding-top: 35%;
-
-	}
-
-	.projectCard{
-		margin: 10px 10px 10px 46px;
-		width: 270px;
-	    height: 380px;
-	    display: inline-block;
-	}
-
-
 }
 
 
+/*Tablet View*/
+@media only screen and (min-width: 416px) and (max-width: 960px){
 
-@media only screen and (min-width: 401px) and (max-width: 960px){
-
-
-	#demo-canvas{
-		width: 755px !important;
+	.linkA {
+		font-size: 34px;
 	}
+
+	nav{
+		top: 36%;
+		left: 51%;
+	}
+
+	.linkA:nth-child(1):hover ~ .line {
+		transform: translate(8px);
+	}
+
+	.linkA:nth-child(2):hover ~ .line {
+		transform: translate(126px);
+	}
+
+	.linkA:nth-child(3):hover ~ .line {
+		transform: translate(250px);
+	}
+
 	
-	#aboutPage{
-		height: 54vh;
-	}
-
-	.about-info{
-		padding-left: 10%;
-
-	}
-
-
-	.imgme {
-		margin-left: 10%;
-		height: 270px;
-		width: 270px;
-		
-	}
-
-	#second-about{
-		height: 40vh;
-	}
-
-	#aboutMe {
-		padding-left: 15%;
-	}
-
-	#aboutMe h2{
-		font-size: 20px;
-	}
-	#aboutMe p{
-		font-size: 15px;
-	}
-
-
-
-	#divSocial{
-	padding-left: 30%;
-	
-	}
-
-	#aboutMe {
-		margin-left: 2px;
-	}
-
-	#webSkill{
-		height: 89vh;
-	}
-
-	#skillsImages{
-		padding-left: 13%;
-		margin-top: 50px;
-	}
-
-
-	#skillsImages i{
-		font-size: 8em;
-		line-height: 135px;
-		padding: 12px;
-
-	}
-
-
-	#project{
-		padding-top: 5%;
-		height: 60vh;
-
-	}
-
-	.projectCard{
-		margin: 5px 5px 5px 5px;
-		width: 210px;
-	    height: 380px;
-	    display: inline-block;
-	}
-
-
-
-
-
-
 }
 
 
 
 /*Desktop Style*/
-@media only screen and (min-width: 961px) {
-	#demo-canvas{
-		width: 1800px !important;
+@media only screen and (min-width: 961px) and (max-width: 1024px) {
+
+	.linkA {
+		font-size: 45px;
+		width: 300px;
 	}
 
+	nav{
+		top: 36%;
+		left: 57%;
+	}
 
+	.linkA:nth-child(1):hover ~ .line {
+		transform: translate(8px);
+	}
+
+	.linkA:nth-child(2):hover ~ .line {
+		transform: translate(126px);
+	}
+
+	.linkA:nth-child(3):hover ~ .line {
+		transform: translate(250px);
+	}
 
 }
-
-
-
-
-
